@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- 
+JAVAMON HTML
+Javamon.html
+AUSTIN VAN BOCKERN /// ETHAN PARLET
+-->
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="javamon.css">
+		<title>Javamon</title>
+	</head>
+
+	<body>
+		
+		<canvas  id="myCanvas" width="1100" height="550" onclick="canvasClick()">
+		</canvas>
+
+		<!-- 'A' ELEMENTS TO BE USED AS BUTTONS ON THE CANVAS -->
+		<!-- START BUTTON ON TITLE PAGE -->
+		<a id="startButton" class="canvasButton" onclick="start(event)">START</a>
+		<a id="introNext" class="canvasButton" onclick="introClick(event)">NEXT</a>
+		<a id="dudeButton" class="canvasButton" onclick="dudeButtonClick(event)">DUDE</a>
+		<a id="broButton" class="canvasButton" onclick="broButtonClick(event)">BRO</a>
+		<a id="submitUsernameButton" class="canvasButton" onclick="submitUsername(event)">NEXT</a>
+		<a id="startGameButton" class="canvasButton" onclick="startGame(event)">START MY<br>ADVENTURE</a>
+		<a id="roomNextButton" class="canvasButton" onclick="roomNext(event)">&#8594;</a>
+		<a id="outsideNextButton" class="canvasButton" onclick="outsideNext(event)">&#8594;</a>
+		<a id="labNextButton" class="canvasButton" onclick="labNext(event)">&#8594;</a>
+		<a id="leftShoeBoxButton" class="canvasButton" onclick="leftShoeBoxClick(event)" onmouseover="leftShoeBoxHover(event)"></a>
+		<a id="middleShoeBoxButton" class="canvasButton" onclick="middleShoeBoxClick(event)" onmouseover="middleShoeBoxHover(event)"></a>
+		<a id="rightShoeBoxButton" class="canvasButton" onclick="rightShoeBoxClick(event)" onmouseover="rightShoeBoxHover(event)"></a>
+		<a id="cokeButton" class="canvasButton" onmouseover="cokeHover(event)"></a>
+		<a id="selectionYesButton" class="canvasButton" onclick="selectionYes(event)">YES</a>
+		<a id="selectionNoButton" class="canvasButton" onclick="selectionNo(event)">NO</a>
+
+
+
+		<!-- BATTLE MENU BUTTONS -->
+		<a id="button1" class="canvasButton" onclick="button1Click(event)">FIGHT</a>
+		<a id="button2" class="canvasButton" onclick="button2Click(event)">JVMN</a>
+		<a id="button3" class="canvasButton" onclick="button3Click(event)"></a>
+		<a id="button4" class="canvasButton" onclick="button4Click(event)">EXIT</a>
+
+
+
+		<!-- IMAGES TO ANIMATE -->
+		<img src="Images/PM3.png" id="rightCharacter" >
+		<img src="Images/PM1.png" id="leftCharacter">
+		<img src="Images/javaMonTitle.png" id="title">
+		<img src="Images/profCoke.png" id="profCoke">
+		<img src="Images/bro.png" id="bambi">
+		<img src="Images/ethanPixel.png" id="ethan">
+		<img src="Images/text2.png" id="textBubble">
+		<img src="Images/text1.png" id="textBubble2">
+		<img src="Images/sipText.png" id="sipText">
+		<img src="Images/battleBox.png" id="battleBox">
+		<img src="Images/fireBolt.png" id="fireBolt">
+		<img src="Images/razorLeaves.png" id="razorLeaves">
+		<img src="Images/waterBolt.png" id="waterBolt">
+		<aside id="leftCharacterHP"></aside>
+		<aside id="rightCharacterHP"></aside>
+
+		<!-- INPUT FIELDS -->
+		<input type="text" name="usernameTxt" id="usernameTxt"/>
+
+		<!-- TEXT -->
+		<p id="introBubbleText" onclick="canvasClick(event)">Welcome to the world of Java'mon. I am professor Coke.</p>
+		<p id="dudeOrBroText">
+			Now, since I need to know who you are as a person for legal reasons, tell me about yourself...<br><br> Are you a Dude or a Bro?
+		</p>
+		<p id="roomText">
+			I wish I had something to do... I have all my chores done and it's only 10 o'clock.
+		</p>
+		<p id="outsideText">
+			HEY!
+		</p>
+		<p id="labText">: Professor Coke? You here?</p>
+		<p id="selectionText"></p>
+		<p id="battleText"></p>
+
+
+	  	<script type="text/javascript" src="animation.js"></script>
+	</body>
+</html>

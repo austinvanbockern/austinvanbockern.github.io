@@ -1,0 +1,128 @@
+/* Css styles for index.html and CIS_Syllabi.html */
+@keyframes headerText {
+    0%   {font-family: Arial;}
+    25%  {font-family: Georgia;}
+    50%  {font-family: "Times New Roman";}
+    75%  {font-family: "Courier New";}
+    100% {font-family: sans-serif;}
+}
+
+@keyframes navItem {
+    0%   {background-color: auto;}
+
+    100% {background-color: black;}
+}
+
+@keyframes navItem2 {
+    0%   {color: auto;}
+
+    100% {color: grey;}
+}
+
+/* General Styles */
+html {
+	padding: 0px;
+	margin: 0px;
+	background: white; /* For browsers that do not support gradients */
+	/*
+  	/* For Safari 5.1 to 6.0 
+    background: -webkit-linear-gradient(left,white,black,white);
+    /* For Opera 11.1 to 12.0 
+    background: -o-linear-gradient(left,white,black,white);
+    /* For Fx 3.6 to 15 
+    background: -moz-linear-gradient(left,white,black,white);
+    /* Standard syntax 
+    background: linear-gradient(to right,white,black,white); 
+    */
+}
+
+body {
+
+	margin: 0px;
+	
+}
+
+/* Header and Navigation Styles */
+header, nav#mainNav {
+	text-align: center;
+}
+
+header {
+	background-color: rgb(70, 70, 250);
+	animation: headerText 3s infinite;
+	padding: 10px;
+	height: 80px;
+}
+
+nav#mainNav {
+
+	/* background-color: rgb(20, 20, 20); */
+	background-color: rgba(0, 0, 150, 0.9);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+nav#mainNav a {
+	font-family: Arial;
+	font-size: 1.2em;
+	padding: 20px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+nav#mainNav a:hover {
+	animation: navItem 0.5s 1 forwards;
+}
+
+/*
+#main, nav, header {
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+*/
+
+h1 {
+	text-align: center;
+	color: white;
+	font-family: Arial;
+} 
+
+
+/* Main Body Styles */
+#main {
+	background-color: white;
+	font-family: Arial;
+	margin-left: 225px;
+	margin-right: 225px;
+	padding: 25px 30px 0px 30px;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#portrait {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px; 
+}
+
+p {
+	text-indent: 50px;
+	text-align: justify;
+	line-height: 20pt;
+}
+
+h3 {
+	text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+	font-family: Arial;
+	font-style: italic;
+	text-align: center;
+	line-height: 20pt;
+}
