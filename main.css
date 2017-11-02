@@ -49,9 +49,17 @@ header, nav#mainNav {
 
 header {
 	background-color: rgb(70, 70, 250);
-	animation: headerText 3s infinite;
 	padding: 10px;
 	height: 80px;
+	color: white;
+}
+
+header > h1 {
+	animation: headerText 3s infinite;
+}
+
+header > h3 {
+	font-family: Courier New;
 }
 
 nav#mainNav {
