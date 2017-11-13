@@ -1,5 +1,4 @@
 <?php
-
 // First array
 print("<strong>Array declared with => operator and letter indexes:</strong><br><br>");
 
