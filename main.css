@@ -37,66 +37,35 @@ html {
 }
 
 body {
-
-	margin: 0px;
-	
+	text-align: justify;
 }
 
 /* Header and Navigation Styles */
-header, nav#mainNav {
-	text-align: center;
-}
-
-header {
+#topNav {
 	background-color: rgb(70, 70, 250);
-	padding: 10px;
-	height: 80px;
+}
+
+nav a {
 	color: white;
+	font-size: 1.1em;
 }
 
-header > h1 {
-	animation: headerText 3s infinite;
+.navbar-brand {
+	font-size: 0.9em;
+	text-shadow: 2px 2px 5px rgb(50, 50, 50);
+	padding: 12px 0px;
 }
 
-header > h3 {
-	font-family: Courier New;
+img {
+	width: 100%;
 }
 
-nav#mainNav {
-
-	/* background-color: rgb(20, 20, 20); */
-	background-color: rgba(0, 0, 150, 0.9);
-	padding-top: 20px;
-	padding-bottom: 20px;
+nav {
+	margin-bottom: 20px;
 }
-
-nav#mainNav a {
-	font-family: Arial;
-	font-size: 1.2em;
-	padding: 20px 20px;
-	color: white;
-	text-decoration: none;
-}
-
-nav#mainNav a:hover {
-	animation: navItem 0.5s 1 forwards;
-}
-
-/*
-#main, nav, header {
-	border-left: 3px solid black;
-	border-right: 3px solid black;
-}
-*/
-
-h1 {
-	text-align: center;
-	color: white;
-	font-family: Arial;
-} 
-
 
 /* Main Body Styles */
+/*
 #main {
 	background-color: white;
 	font-family: Arial;
@@ -126,11 +95,14 @@ p {
 h3 {
 	text-align: justify;
 }
+*/
 
 /* Footer Styles */
+/*
 footer {
 	font-family: Arial;
 	font-style: italic;
 	text-align: center;
 	line-height: 20pt;
 }
+*/

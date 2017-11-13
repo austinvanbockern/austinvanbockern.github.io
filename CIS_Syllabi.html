@@ -2,59 +2,120 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		
+		.container-fluid {
+			padding: 0px;
+			margin: 0px;
+		}
+
+	</style>
 
 	<title>Austin Van Bockern</title>
 </head>
 
-<body>
-	<header>
-		<h1>Austin Van Bockern</h1>
-	</header>
-	
+	<body>
+		<div class="container-fluid full-width" id="topNav">
+			<!-- MAIN NAV BAR -->
+			<nav class="container">
+				
+			
+				<nav class="navbar navbar-expand-lg navbar-dark bg-faded" role="navigation">
+				  	
+				  	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+				  			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  	</button>
 
-	<nav id="mainNav">
-		<a href="index.html">Home</a>
-		<a href="ResumeAMVBRefined.pdf">Resume</a>
-		<a href="CIS_Syllabi.html">CIS Syllabi</a>
-		<a href="javascript.html">Javascript</a>
-		<a href="php.html">PHP</a>
-		<a href="csharp.html">C#</a>
-		<a href="java.html">Java</a>
-		<a href="http://catalog.southeasttech.edu/preview_program.php?catoid=7&poid=734&returnto=538">STI Curriculum</a>
-	</nav>
+					<h1><a class="navbar-brand" href="">Austin Van Bockern</a></h1>
 
-	<div id="main">
+				 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					    <ul class="navbar-nav">
+					      	<li class="nav-item">
+					        	<a class="nav-link" href="index.html">Home</a>
+					      	</li>
 
-		<h2>Computer Information Systems Syllabi</h2>
+					      	<li class="nav-item">
+					        	<a class="nav-link" href="Resume.html">Resume</a>
+					     	</li>
 
-		<!--
-		<h3>Dual Credit Courses (Spring 2016)</h3>
-		<a href="">PSYCH 101 - General Psychology</a><br/>
-		<a href="">ENGL 101 - Composition</a>
-		-->
+					     	<li class="nav-item active">
+					        	<a class="nav-link" href="CIS_Syllabi.html">CIS Syllabi<span class="sr-only">(current)</span></a>
+					     	</li>
+					      
+						    <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" 
+						           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Code</a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						          	<a class="dropdown-item" href="csharp.html">C#</a>
+						          	<a class="dropdown-item" href="java.html">Java</a>
+						          	<a class="dropdown-item" href="javascript.html">JavaScript</a>
+						          	<a class="dropdown-item" href="php.html">PHP</a>
+						        </div>
+					      	</li>
 
-		<h3>Semster 1 (Fall 2016)</h3>
-		<a href="pdfs/Semester1/cis130.pdf">CIS 130 - Introduction to Programming</a><br/>
-		<a href="pdfs/Semester1/cis195.pdf">CIS 195 - Internet Programming Essentials</a>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="http://catalog.southeasttech.edu/preview_program.php?catoid=7&poid=734&returnto=538">STI Curriculum</a>
+					        </li>
+					    </ul>
+				 	</div>
+				</nav>
+			</nav>
+		</div>
 
-		<h3>Semster 2 (Spring 2017)</h3>
-		<a href="pdfs/Semester2/cis131.pdf">CIS 131 - C# Programming</a><br/>
-		<a href="pdfs/Semester2/cis149.pdf">CIS 149 - Introduction to Java</a><br/>
-		<a href="pdfs/Semester2/cis194.pdf">CIS 194 - Introduction to Databases</a><br/>
-		<a href="pdfs/Semester2/cis196.pdf">CIS 196 - Internet Programming Essentials II</a><br/>
-		<a href="pdfs/Semester2/cis207.pdf">CIS 207 - eBusiness</a>
-
-		<h3>Semster 3 (Fall 2017)</h3>
-		<a href="pdfs/Semester3/cis236.pdf">CIS 236 - Introduction to MS Web Development</a><br/>
-		<a href="pdfs/Semester3/cis241.pdf">CIS 241 - Dynamic Website Development</a><br/>
-		<a href="pdfs/Semester3/cis249.pdf">CIS 249 - Advanced Object Oriented Programming</a><br/>
-		<a href="pdfs/Semester3/cis279.pdf">CIS 279 - Advanced Databases</a><br/>
-		<a href="pdfs/Semester3/cis293.pdf">CIS 293 - Advanced Technologies</a>
-
-	</div>
-
-	
-</body>
-
+			<!-- MAIN BODY CONTENT-->			
+			<div class="container">
+				<div class="row" style="text-align: left">
+					<div class="col-md-3">
+						<div class="panel panel-default">
+						  	<div class="panel-heading">
+						    	<h3 class="panel-title">Semster 1<br/>(Fall 2016)</h3>
+						  	</div>
+						  	<div class="panel-body">
+						    	<a href="pdfs/Semester1/cis130.pdf">CIS 130 - Introduction to Programming</a><br/>
+								<a href="pdfs/Semester1/cis195.pdf">CIS 195 - Internet Programming Essentials</a><br/><br/>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="panel panel-default">
+						  	<div class="panel-heading">
+						    	<h3 class="panel-title">Semster 2<br/>(Spring 2017)</h3>
+						  	</div>
+						  	<div class="panel-body">
+						    	<a href="pdfs/Semester2/cis131.pdf">CIS 131 - C# Programming</a><br/>
+								<a href="pdfs/Semester2/cis149.pdf">CIS 149 - Introduction to Java</a><br/>
+								<a href="pdfs/Semester2/cis194.pdf">CIS 194 - Introduction to Databases</a><br/>
+								<a href="pdfs/Semester2/cis196.pdf">CIS 196 - Internet Programming Essentials II</a><br/>
+								<a href="pdfs/Semester2/cis207.pdf">CIS 207 - eBusiness</a><br/><br/>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="panel panel-default">
+						  	<div class="panel-heading">
+						    	<h3 class="panel-title">Semster 3<br/>(Fall 2017)</h3>
+						  	</div>
+						  	<div class="panel-body">
+						    	<a href="pdfs/Semester3/cis236.pdf">CIS 236 - Introduction to MS Web Development</a><br/>
+								<a href="pdfs/Semester3/cis241.pdf">CIS 241 - Dynamic Website Development</a><br/>
+								<a href="pdfs/Semester3/cis249.pdf">CIS 249 - Advanced Object Oriented Programming</a><br/>
+								<a href="pdfs/Semester3/cis279.pdf">CIS 279 - Advanced Databases</a><br/>
+								<a href="pdfs/Semester3/cis293.pdf">CIS 293 - Advanced Technologies</a>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
